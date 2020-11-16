@@ -5,3 +5,4 @@
 ![03](https://github.com/alcirBarros/estacionamento/blob/master/screenshot/imagem-03.jpg)
 ![04](https://github.com/alcirBarros/estacionamento/blob/master/screenshot/imagem-04.jpg)
 ![05](https://github.com/alcirBarros/estacionamento/blob/master/screenshot/imagem-05.jpg)
+![06](https://github.com/alcirBarros/estacionamento/blob/master/screenshot/imagem-06.jpg)
