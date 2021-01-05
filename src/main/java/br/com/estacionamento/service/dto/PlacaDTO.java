@@ -7,7 +7,7 @@ import javax.validation.constraints.Pattern;
 
 public class PlacaDTO {
 
-    @Pattern(regexp = "[A-Z]{3}-[0-9]{4}", message = "Informe a placa no formato 'AAA-9999'")
+    @Pattern(regexp = "[A-Z]{3}-[0-9]{4}", message = "Informe a placa no formato: 'AAA-9999'")
     @NotNull(message = "Informa o número da placa.")
     public String placa;
 
