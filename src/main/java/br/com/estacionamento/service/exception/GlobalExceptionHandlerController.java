@@ -11,6 +11,9 @@ import org.springframework.web.bind.annotation.RestControllerAdvice;
 
 @RestControllerAdvice
 public class GlobalExceptionHandlerController {
+	
+	@Autowired
+	private MessageSource messageSource;
 
 	@ResponseStatus(HttpStatus.BAD_REQUEST)
 	@ExceptionHandler(MethodArgumentNotValidException.class)
@@ -19,6 +22,9 @@ public class GlobalExceptionHandlerController {
 		ex.getBindingResult().getAllErrors().forEach((error) -> {
 			String fieldName = ((FieldError) error).getField();
 			String errorMessage = error.getDefaultMessage();
+			
+			String messagem = messageSource.getMessage(e, LocaleContextHolder.getLocale());
+			
 			errors.put(fieldName, errorMessage);
 		});
 		return errors;
